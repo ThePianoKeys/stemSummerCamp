@@ -32,13 +32,11 @@
 </html>
 
 var pageNode = document.getElementsByTagName('body')[0];
+var paragraph = document.createElement('p'); 
+var body = document.getElementsByTagName('body')[0];
+var paragraphText = document.createTextNode('Hello world!');
 
-var newImg = document.createElement('img');
-newImg.src = 'pix/smallKitten.png';
-newImg.style.border = '1px solid black';
-pageNode.appendChild(newImg);
+paragraph.appendChild(paragraphText);
 
-var newParagraph = document.createElement('p');
-var paragraphText = document.createTextNode('Squee!');
-newParagraph.appendChild(paragraphText);
-pageNode.appendChild(newParagraph);
+console.log(paragraph)
+body.appendChild(paragraph)
