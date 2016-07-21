@@ -9,6 +9,18 @@
             }
         </style>
         
+        <script>
+            var pageNode = document.getElementsByTagName('body')[0];
+            var paragraph = document.createElement('p'); 
+            var body = document.getElementsByTagName('body')[0];
+            var paragraphText = document.createTextNode('Hello world!');
+            
+            paragraph.appendChild(paragraphText);
+            
+            console.log(paragraph)
+            body.appendChild(paragraph)
+        </script>
+        
         <h1>How can you describe me?</h1>
         
         <center><img src = "https://lh6.googleusercontent.com/-F34ihYKQut0/AAAAAAAAAAI/AAAAAAAA8Do/mJYJ4WejNEg/photo.jpg" alt = "Anonymous Person" style = "width:200px;height=200px"></center>
