@@ -9,6 +9,18 @@
             }
         </style>
         
+        <script>
+            var pageNode = document.getElementsByTagName('body')[0];
+            var paragraph = document.createElement('p'); 
+            var body = document.getElementsByTagName('body')[0];
+            var paragraphText = document.createTextNode('Hello world!');
+            
+            paragraph.appendChild(paragraphText);
+            
+            console.log(paragraph)
+            body.appendChild(paragraph)
+        </script>
+        
         <h1>How can you describe me?</h1>
         
         <center><img src = "https://lh6.googleusercontent.com/-F34ihYKQut0/AAAAAAAAAAI/AAAAAAAA8Do/mJYJ4WejNEg/photo.jpg" alt = "Anonymous Person" style = "width:200px;height=200px"></center>
@@ -30,13 +42,3 @@
         <p>After I graduate from highschool, I plan on majoring in either architectural engineering or architecture, while minoring in botany. From these majors, I be able to create structures that will help save the world from the destructive path of global warming, which after all, will destroy the place we originate.</p>
     </body>
 </html>
-
-var pageNode = document.getElementsByTagName('body')[0];
-var paragraph = document.createElement('p'); 
-var body = document.getElementsByTagName('body')[0];
-var paragraphText = document.createTextNode('Hello world!');
-
-paragraph.appendChild(paragraphText);
-
-console.log(paragraph)
-body.appendChild(paragraph)
